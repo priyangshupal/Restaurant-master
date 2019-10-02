@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filter_choice">
+        <item>All</item>
+        <item>Beverages</item>
+        <item>Breakfast</item>
+        <item>Curry</item>
+        <item>Dal</item>
+        <item>Hot Drinks</item>
+        <item>Indian Breakfast</item>
+        <item>Naan</item>
+        <item>Raita</item>
+        <item>Rice</item>
+        <item>Salad</item>
+        <item>Snacks</item>
+        <item>Soups</item>
+        <item>Veg Only</item>
+    </string-array>
+</resources>

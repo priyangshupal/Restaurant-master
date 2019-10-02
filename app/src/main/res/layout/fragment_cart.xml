@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:layout_above="@+id/divider" />
+
+    <RelativeLayout
+        android:id="@+id/empty_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_plate"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="Empty Cart Image"
+            android:src="@mipmap/img_plate" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_plate"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_margin="10dp"
+            android:shadowColor="@color/colorBlack"
+            android:text="No Orders Yet"/>
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#AE7A7A7A"
+            android:textSize="15sp"
+            android:text="Add something from the menu"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_placed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_chef"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="Order Placed Image"
+            android:src="@mipmap/img_after_order"/>
+
+        <TextView
+            android:id="@+id/tv_text11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_chef"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:shadowColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Your order \nhas been placed"/>
+
+        <TextView
+            android:id="@+id/tv_text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_text11"
+            android:layout_centerHorizontal="true"
+            android:textColor="#AE7A7A7A"
+            android:textSize="15sp"
+            android:text="Check your order status for more details"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/tvTotal"
+        android:background="@drawable/bg_shadow"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TotalPrice"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:text="Total"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/TotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Rs. 0"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/cart_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp"
+
+        android:textColor="#fff"
+        android:elevation="15dp"
+        android:background="@drawable/btn_bg_rounded_corners"
+        android:text="Checkout" />
+
+</RelativeLayout>

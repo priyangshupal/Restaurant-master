@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="title_menu">Menu</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_status">Status</string>
+    <string name="title_book_table">Book Table</string>
+    <string name="Rs">Rs. </string>
+</resources>

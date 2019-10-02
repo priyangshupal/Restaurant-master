@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cvStatusItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/relLay_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="122dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="6dp"
+        android:background="@drawable/bg_cardview">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rb_Placed"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Estimated Time" />
+
+        <TextView
+            android:id="@+id/status_estimatedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:textSize="18sp"
+            android:text="30 Minutes"/>
+
+        <TextView
+            android:id="@+id/tv_text13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/status_OrderAmount"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:text="Order Amount" />
+
+        <TextView
+            android:id="@+id/status_OrderAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rb_Ready"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="#198453" />
+
+        <RadioButton
+            android:id="@+id/rb_Placed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:checked="true"
+            android:text="Order Placed"
+            android:layout_marginTop="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_Confirmed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_Placed"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Order Confirmed" />
+
+
+        <RadioButton
+            android:id="@+id/rb_Ready"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/rb_Confirmed"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Ready for delivery" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
